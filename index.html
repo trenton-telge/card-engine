@@ -5,14 +5,36 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/material-design-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="master.css">
+    <title>Card Engine</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <div id="lbar">
+      <div class="fw">
+        <div class="fw right-align">
+          <i id="lbar-button" class="material-icons">keyboard_arrow_left</i>
+        </div>
+        &nbsp;
+        <div id="lbar-content" class="fw">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+    <div id="center">
 
+    </div>
+    <div id="rbar">
+      <div class="fw">
+        <div class="fw left-align">
+          <i id="rbar-button" class="material-icons">keyboard_arrow_right</i>
+        </div>
+        &nbsp;
+        <div id="rbar-content" class="fw">
+          &nbsp;
+        </div>
+      </div>
+    </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>

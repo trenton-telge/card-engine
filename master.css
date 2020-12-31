@@ -1,0 +1,80 @@
+
+html {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, main, .fw {
+    width: 100%;
+}
+html, body, main {
+    min-height: 100%;
+    height: 100%;
+    background-color: #222831;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#lbar, #rbar {
+    width: 20%;
+    max-width:20%;
+    min-width: 32px;
+    background-color: #2E3147;
+    min-height: 100%;
+    transition: width .4s;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+#lbar {
+    border-right: 1px solid white;
+}
+#rbar {
+    border-left: 1px solid white;
+}
+#lbar-button, #rbar-button {
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+#lbar-content, #rbar-content {
+    height: 100%;
+}
+.left-align {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+}
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+}
+#center {
+    width: 100%;
+    min-width: 60%;
+    min-height: 100%;
+}
+.material-icons {
+    font-family: 'Material Icons', sans-serif;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 28px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
