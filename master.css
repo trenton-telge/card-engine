@@ -28,6 +28,8 @@ body {
     transition: width .4s;
     flex-shrink: 0;
     flex-wrap: wrap;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 #lbar {
     border-right: 1px solid white;
