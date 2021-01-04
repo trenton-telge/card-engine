@@ -6,6 +6,10 @@
 // process.
 var lbarExpanded = true;
 var rbarExpanded = true;
+window.getExePath = function(){
+    return require("path").dirname(require('electron').remote.app.getPath("exe"));
+}
+console.log(window.getExePath())
 
 document.querySelector('#lbar-button').addEventListener('click', () => {
     if (lbarExpanded) {
